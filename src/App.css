@@ -5,4 +5,128 @@
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+
+.hero-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  margin-top: 5rem;
+}
+.content {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  height: 65rem;
+  justify-content: center;
+  position: relative
+}
+.hero-text {
+ display: flex;
+flex-direction: column;
+position: relative;
+max-width: 38rem;
+
+/* background-color: rgb(227, 227, 227); */
+}
+.hero-text h1 {
+  color: #2d2e32;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.hero-text img {
+  height: 3.8rem;
+  width: 3.8rem;
+  position: absolute;
+  right: 14rem;
+  top: 6rem;
+}
+.hero-text p {
+  color: #555;
+  font-weight: 400;
+}
+.hero-text span {
+  cursor: pointer;
+  display: flex;
+  gap: 0.6rem;
+  margin: 1.5rem 0
+}
+
+.hero-text span a {
+  color: #2d2e32;
+  font-size: 1.4rem
+}
+.hero-text span a:hover {
+  color: #147efb
+}
+
+
+.hero-img {
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(https://th.bing.com/th/id/OIP.74exSJDttJ-EzJjAt8dEYgAAAA?rs=1&pid=ImgDetMain);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 20rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 20rem
+}
+
+@media (max-width: 500px) {
+  .hero-img {
+      height:28rem;
+      width: 28rem
+  }
+}
+
+@-webkit-keyframes morph {
+  0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+
+  50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+
+  to {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+}
+
+@keyframes morph {
+  0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+
+  50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+
+  to {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+}
+
+
 

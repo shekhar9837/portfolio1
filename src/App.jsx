@@ -1,12 +1,12 @@
 import React from 'react'
-import StickyNavbar from './Components/Navbar/Navbar'
+import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/HeroSection/Hero'
 import  "./App.css"
 
 const App = () => {
   return (
     <div>
-      <StickyNavbar/>
+      <Navbar/>
       <Hero/>
     </div>
   )
