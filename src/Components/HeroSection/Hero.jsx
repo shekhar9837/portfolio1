@@ -1,7 +1,7 @@
 import React from "react";
-import BlobComponent from "./BlobComponent";
 import { FaXTwitter, FaLinkedin  } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import "./hero.css"
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="hero-main">
         <div className="hero-text">
           <h1>
-            Front-End React Developer
+            Front-End React<br/>Developer
           </h1>
           <img src="./src/assets/waving.png" alt="" />
           <p>
